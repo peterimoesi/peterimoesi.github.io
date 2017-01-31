@@ -21,16 +21,18 @@
 			padding: 0;
 			overflow: hidden;
 		}
-		video {
-			position: absolute;
-			left: 50%;
-			width: auto;
-			height: auto;
-			transform: translate(-50%, -15%);
-			min-width: 80%;
-			min-height: 80%;
+		@media (min-width: 500px) {
+			video {
+				position: absolute;
+				left: 50%;
+				width: auto;
+				height: auto;
+				transform: translate(-50%, -15%);
+				min-width: 80%;
+				min-height: 80%;
+			}
 		}
-		@media (max-width: 768px) {
+		@media (max-width: 415px) {
 			video {
 				left: 0;
 				transform: translate(-18%, -15%);
@@ -39,6 +41,7 @@
 
 			}
 		} 
+		
 		h2, i {
 			color: white;
 		}
